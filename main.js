@@ -10,30 +10,26 @@ if(calculatorType == "a") {
 
 // Advanced
 
-if(advancedCalculation == "p" ) {
+// Power
+
+if(advancedCalculation == "p") {
   var numberToPower = prompt("Enter a number to apply a power to");
-} else {
+}
+
+var powerValue = prompt("Enter the value of the power")
+
+var powerAnswer = Math.pow (numberToPower, powerValue);
+
+alert(powerAnswer);
+
+// Square Root
+
+if(advancedCalculation == "s") {
   var numberToSquareRoot = prompt("Enter a number to square root");
 }
 
-var squareRoot = Math.sqrt(numberToSquareRoot);
+var squareRoot = Math.sqrt(numberToSquareRoot)
 
-if(numberToPower) {
-  var power = prompt("Enter the power value");
-} else {
+if(numberToSquareRoot) {
   alert(squareRoot);
 }
-
-var powerAnswer = Math.pow(numberToPower, power);
-
-if(power) {
-  alert(powerAnswer);
-}
-
-// Basic
-
-if(basicCalculation =="a") {
-  var firstAdditionNumber = prompt("Enter a number");
-}
-
-var secondAdditionNumber = alert("Enter a number to add to this");

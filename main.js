@@ -2,11 +2,6 @@ alert("Welcome to Mat's calculator");
 
 var calculatorType = prompt("Which type of calculator would you like to use? (a)dvanced, (b)asic or (BMI)").toLowerCase();
 
-// if(calculatorType == "a") {
-//   var advancedCalculation = prompt("Advanced calculator. Do you want to (p)ower or (s)quare root a number?").toLowerCase();
-// } else {
-//   var basicCalculation = prompt("Basic calculator. Do you want to do (a)ddition, (s)ubtraction, (m)ultiplication or (d)ivision").toLowerCase();
-// }
 
 if(calculatorType == "a") {
   var advancedCalculation = prompt("Advanced calculator. Do you want to (p)ower or (s)quare root a number?").toLowerCase();

@@ -17,44 +17,60 @@ if(calculatorType == "bmi") {
 // Basic
 
 // Addition
+
 if(basicCalculation == "a") {
-  var additionNumberOne = prompt("Enter a number");
-  var additionNumberTwo = prompt("Enter a number to add to this");
-  alert(parseInt(additionNumberOne) + parseInt(additionNumberTwo));
+  addition ();
+  function addition (additionNumberOne = parseInt(prompt("Enter a number")), additionNumberTwo = parseInt(prompt("Enter a number to add to this"))) {
+    result = additionNumberOne + additionNumberTwo;
+    return result;
+  }
+  alert(result);
 }
 
-// Subtraction
+// subtraction ();
+
 if(basicCalculation == "s") {
-  var subtractionNumberOne = prompt("Enter a number");
-  var subtractionNumberTwo = prompt("Enter a number to subtract this");
-  alert(parseInt(subtractionNumberOne) - parseInt(subtractionNumberTwo));
+  subtraction ();
+  function subtraction (subtractionNumberOne = (prompt("Enter a number")), subtractionNumberTwo = (prompt("Enter a number to subtract from this"))) {
+    result = subtractionNumberOne - subtractionNumberTwo;
+    return result;
+  }
+  alert(result);
 }
 
 // Multiplication
+
 if(basicCalculation == "m") {
-  var multiplicationNumberOne = prompt("Enter a number");
-  var multiplicationNumberTwo = prompt("Enter a number to multiply this by");
-  alert(multiplicationNumberOne * multiplicationNumberTwo);
+  multiplication ();
+  function multiplication (multiplicationNumberOne = (prompt("Enter a number")), multiplicationNumberTwo = (prompt("Enter a number to multiply this by"))) {
+    result = multiplicationNumberOne * multiplicationNumberTwo;
+    return result;
+  }
+  alert(result);
 }
 
 // Division
+
 if(basicCalculation == "d") {
-  var divisionNumberOne = prompt("Enter a number");
-  var divisionNumberTwo = prompt("Enter a number to divide this by");
-  alert(divisionNumberOne / divisionNumberTwo);
+  division ();
+  function division (divisionNumberOne = (prompt("Enter a number")), divisionNumberTwo = (prompt("Enter a number to divide this by"))) {
+    result = divisionNumberOne / divisionNumberTwo;
+    return result;
+  }
+  alert(result);
 }
-
-
 
 // Advanced
 
 // Power
 
 if(advancedCalculation == "p") {
-  var numberToPower = prompt("Enter a number to apply a power to");
-  var powerValue = prompt("Enter the value of the power");
-  var powerAnswer = Math.pow (numberToPower, powerValue);
-  alert(powerAnswer);
+  power ();
+  function power (numberToPower = (prompt("Enter a number to apply a power to")), powerValue = (prompt("Enter the value of the power"))) {
+    result = Math.pow(numberToPower, powerValue);
+    return result;
+  }
+  alert(result);
 }
 
 // Square Root
@@ -63,6 +79,15 @@ if(advancedCalculation == "s") {
   var numberToSquareRoot = prompt("Enter a number to square root");
   var squareRoot = Math.sqrt(numberToSquareRoot);
   alert(squareRoot);
+}
+
+if(advancedCalculation == "s") {
+  squareroot ();
+  function squareroot (numberToSquareroot = (prompt("Enter a number to squareroot"))) {
+    result = Math.sqrt(numberToSquareroot);
+    return result;
+  }
+  alert(result);
 }
 
 // BMI

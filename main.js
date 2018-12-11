@@ -1,12 +1,23 @@
 alert("Welcome to Mat's calculator");
 
-var calculatorType = prompt("Which type of calculator would you like to use? (a)dvanced or (b)asic").toLowerCase();
+var calculatorType = prompt("Which type of calculator would you like to use? (a)dvanced, (b)asic or (BMI)").toLowerCase();
+
+// if(calculatorType == "a") {
+//   var advancedCalculation = prompt("Advanced calculator. Do you want to (p)ower or (s)quare root a number?").toLowerCase();
+// } else {
+//   var basicCalculation = prompt("Basic calculator. Do you want to do (a)ddition, (s)ubtraction, (m)ultiplication or (d)ivision").toLowerCase();
+// }
 
 if(calculatorType == "a") {
   var advancedCalculation = prompt("Advanced calculator. Do you want to (p)ower or (s)quare root a number?").toLowerCase();
-} else {
+}
+if(calculatorType == "b") {
   var basicCalculation = prompt("Basic calculator. Do you want to do (a)ddition, (s)ubtraction, (m)ultiplication or (d)ivision").toLowerCase();
 }
+if(calculatorType == "bmi") {
+  var bmiCalculation = prompt("BMI calculator. Do you want to use (m)etric or (i)mperial").toLowerCase();
+}
+
 
 // Basic
 
@@ -46,7 +57,7 @@ if(basicCalculation == "d") {
 
 if(advancedCalculation == "p") {
   var numberToPower = prompt("Enter a number to apply a power to");
-  var powerValue = prompt("Enter the value of the power")
+  var powerValue = prompt("Enter the value of the power");
   var powerAnswer = Math.pow (numberToPower, powerValue);
   alert(powerAnswer);
 }
@@ -55,6 +66,20 @@ if(advancedCalculation == "p") {
 
 if(advancedCalculation == "s") {
   var numberToSquareRoot = prompt("Enter a number to square root");
-  var squareRoot = Math.sqrt(numberToSquareRoot)
+  var squareRoot = Math.sqrt(numberToSquareRoot);
   alert(squareRoot);
+}
+
+// BMI
+
+if(bmiCalculation == "m") {
+  var weightKilos = prompt("What is your weight in kilograms");
+  var heightMeters = prompt("What is your height in meters");
+  alert(weightKilos / (heightMeters*heightMeters));
+}
+
+if(bmiCalculation == "i") {
+  var weightPounds = prompt("What is your weight in pounds?");
+  var heightInches = prompt("What is your height in inches?");
+  alert(weightPounds / (heightInches*heightInches) * 703);
 }

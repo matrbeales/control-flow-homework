@@ -76,12 +76,6 @@ if(advancedCalculation == "p") {
 // Square Root
 
 if(advancedCalculation == "s") {
-  var numberToSquareRoot = prompt("Enter a number to square root");
-  var squareRoot = Math.sqrt(numberToSquareRoot);
-  alert(squareRoot);
-}
-
-if(advancedCalculation == "s") {
   squareroot ();
   function squareroot (numberToSquareroot = (prompt("Enter a number to squareroot"))) {
     result = Math.sqrt(numberToSquareroot);
@@ -90,16 +84,24 @@ if(advancedCalculation == "s") {
   alert(result);
 }
 
-// BMI
+// BMI Metric
 
 if(bmiCalculation == "m") {
-  var weightKilos = prompt("What is your weight in kilograms");
-  var heightMeters = prompt("What is your height in meters");
-  alert(weightKilos / (heightMeters*heightMeters));
+  bmiMetric ();
+  function bmiMetric (weightKilos = (prompt("Enter your weight in kilograms")), heightMeters = (prompt("Enter your height in meters"))) {
+    result = (weightKilos / (heightMeters*heightMeters));
+    return result;
+  }
+  alert(result);
 }
 
+// BMI Imperial
+
 if(bmiCalculation == "i") {
-  var weightPounds = prompt("What is your weight in pounds?");
-  var heightInches = prompt("What is your height in inches?");
-  alert(weightPounds / (heightInches*heightInches) * 703);
+  bmiImperial ();
+  function bmiImperial (weightPounds = (prompt("Enter your weight in pounds")), heightInches = (prompt("Enter your height in inches"))) {
+    result = (weightPounds / (heightInches*heightInches) * 703);
+    return result;
+  }
+  alert(result);
 }

@@ -6,13 +6,13 @@ var calculatorType = prompt("Which type of calculator would you like to use? (a)
 if(calculatorType == "a") {
   var advancedCalculation = prompt("Advanced calculator. Do you want to (p)ower or (s)quare root a number?").toLowerCase();
 }
-if(calculatorType == "b") {
+else if(calculatorType == "b") {
   var basicCalculation = prompt("Basic calculator. Do you want to do (a)ddition, (s)ubtraction, (m)ultiplication or (d)ivision").toLowerCase();
 }
-if(calculatorType == "bmi") {
+else if(calculatorType == "bmi") {
   var bmiCalculation = prompt("BMI calculator. Do you want to use (m)etric or (i)mperial").toLowerCase();
 }
-
+else (prompt("Error! Invalid Input! Please enter 'a', 'b' or 'bmi'"))
 
 // Basic
 
@@ -29,7 +29,7 @@ if(basicCalculation == "a") {
 
 // subtraction ();
 
-if(basicCalculation == "s") {
+else if(basicCalculation == "s") {
   subtraction ();
   function subtraction (subtractionNumberOne = (prompt("Enter a number")), subtractionNumberTwo = (prompt("Enter a number to subtract from this"))) {
     result = subtractionNumberOne - subtractionNumberTwo;
@@ -40,7 +40,7 @@ if(basicCalculation == "s") {
 
 // Multiplication
 
-if(basicCalculation == "m") {
+else if(basicCalculation == "m") {
   multiplication ();
   function multiplication (multiplicationNumberOne = (prompt("Enter a number")), multiplicationNumberTwo = (prompt("Enter a number to multiply this by"))) {
     result = multiplicationNumberOne * multiplicationNumberTwo;
@@ -51,7 +51,7 @@ if(basicCalculation == "m") {
 
 // Division
 
-if(basicCalculation == "d") {
+ else if(basicCalculation == "d") {
   division ();
   function division (divisionNumberOne = (prompt("Enter a number")), divisionNumberTwo = (prompt("Enter a number to divide this by"))) {
     result = divisionNumberOne / divisionNumberTwo;
@@ -75,7 +75,7 @@ if(advancedCalculation == "p") {
 
 // Square Root
 
-if(advancedCalculation == "s") {
+else if(advancedCalculation == "s") {
   squareroot ();
   function squareroot (numberToSquareroot = (prompt("Enter a number to squareroot"))) {
     result = Math.sqrt(numberToSquareroot);
